@@ -177,12 +177,12 @@
       let fallSpeedMultiplier = 1;
       let trashIntervalId;
       let trashSpawnInterval = 1000;
-      let trashSpawnDecreaseRate = 10;
+      let trashSpawnDecreaseRate = 20;
       let spawnThreshold = 5;
       let currentBackgroundIndex = 0;
 
       function updateBackground(score) {
-        const changeInterval = 30;
+        const changeInterval = 10;
 
         const newBackgroundIndex =
           Math.floor(score / changeInterval) % backgrounds.length;
